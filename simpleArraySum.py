@@ -7,19 +7,16 @@ def simpleArraySum(ar):
     # [1,2]=3
     # index 0+index 1=sum of array
     # ar[0] + ar[1] =3 
-    lenArray=len(ar)    
+    # lenArray=len(ar)    
     sumArray=0
-    for i in range(lenArray):
-        sumArray=sumArray+ar[i]
-        if (lenArray < i):
-            print(ar[i])
-        else:
-            print(sumArray)
+    for i in ar:
+        sumArray=sumArray+i
+        
             
             
-    return sum(ar)
-
+    print (sumArray)
         
 
 
 simpleArraySum([1, 2, 3, 4, 10, 11])
+g
