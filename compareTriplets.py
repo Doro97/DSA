@@ -16,24 +16,27 @@ def compareTriplets(a,b):
 
 
     valueList=[value for value in zip(a,b)]
-    # print (valueList[0][1])
+    
+    # for i in valueList:
+    # print (valueList[0])
     j=0
     while j <= 2:
-        score = []
-        for i in valueList:
-            if (valueList[j][0] > valueList[j][1]) :           
-                score.append(1)
-                print(score)
-            elif(valueList[j][0] < valueList[j][1]) :
-                score.append(1)
-                print(score)
-            else:
-                score.append(0)
-                print(score)
-            j += 1
+        score=[]
+        a_res = []
+        b_res=[]
+
+        if (valueList[j][0] > valueList[j][1]) :
+            score.append(1)
+            # print(a_res)
+        elif(valueList[j][0] < valueList[j][1]) :
+            score.append(1)
+        else:
+            score.append(0)
+        print(score)
+        j += 1
             
 
 
-compareTriplets([5,6,7],[3,6,10])
+# compareTriplets([5,6,7],[3,6,10])
 # compareTriplets([1,2,3],[3,2,1])
-# compareTriplets([17, 28, 30],[99 ,16 ,8])
+compareTriplets([17, 28, 30],[99 ,16 ,8])
